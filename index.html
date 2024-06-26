@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangTime</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container" id="start-screen">
+        <h1>HangTime</h1>
+        <p>High Score: <span id="high-score">0</span></p>
+        <button id="play-button">Play Modern Mode</button>
+        <button id="play-classic-button">Play Classic Mode</button>
+        <button id="toggle-theme">Toggle Dark Mode</button>
+    </div>
+    <div class="container" id="game-screen" style="display:none;">
+        <div class="top-bar">
+            <div id="score">Score: 0</div>
+            <h1>HangTime</h1>
+            <div id="game-high-score">High Score: <span id="game-high-score-value">0</span></div>
+        </div>
+        <div id="timer">Time Left: 60</div>
+        <div id="hangman-drawing"></div>
+        <div id="word-display"></div>
+        <div id="hint-display"></div>
+        <div id="guesses"></div>
+        <div id="used-letters"></div>
+        <div id="input-area">
+            <input type="text" id="guess-input" maxlength="1" placeholder="Guess a letter">
+            <button id="guess-button">Guess</button>
+        </div>
+        <div id="word-input-area">
+            <input type="text" id="word-input" placeholder="Guess the word">
+            <button id="word-button">Guess Word</button>
+        </div>
+        <div id="buttons-area">
+            <button id="hint-button">Get Hint</button>
+        </div>
+        <p id="message"></p>
+        <button id="reset-button">New Game</button>
+    </div>
+    <div class="container" id="classic-game-screen" style="display:none;">
+        <div class="top-bar">
+            <div id="classic-score">Score: 0</div>
+            <h1>HangTime Classic</h1>
+            <div id="classic-high-score">High Score: <span id="classic-high-score-value">0</span></div>
+        </div>
+        <div id="classic-timer">Time Left: 60</div>
+        <div id="classic-hangman-drawing"></div>
+        <div id="classic-word-display"></div>
+        <div id="classic-hint-display"></div>
+        <div id="classic-guesses"></div>
+        <div id="classic-keyboard"></div>
+        <div id="classic-message"></div>
+        <div id="classic-buttons-area">
+            <button id="classic-hint-button">Get Hint</button>
+        </div>
+        <button id="classic-reset-button">New Game</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
